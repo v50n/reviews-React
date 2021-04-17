@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F5F8;
+}
+
+h1,h2,h3,h4,h5{
+    text-align: center;
+    margin-block-end: 0.4rem;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+    
+    & .title{
+        margin-bottom: 3rem;
+        & .underline{
+            width: 70px;
+            border: 2px solid #65B3EC;
+            margin: auto;
+        }
+    }
+
+    & .review-carousel{
+        width: 70%;
+        background-color: white;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: gray;
+        text-align: center; // center all child element
+        & .img-reviewer{
+            margin: auto;
+            & img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            & .reviewer-info{
+                & .reviewer-name{
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+    
+                & .reviewer-job{
+                    font-size: 0.9em;
+                    color: #B4DCF8;
+                }
+            }
+        }
+
+        & .review-content{
+            margin-top: 1rem;
+            color: #A0A1A9;
+            text-align: justify;
+        }
+
+        & .prev-next-btn{
+                margin: 1rem;
+                color: red;
+        }
+
+        & .suprise-btn{
+            & .btn-random{
+                border: 1px solid #65B3EC;
+                border-radius: 5px;
+                color: #65B3EC;
+                background-color: #ECF7FE;
+
+            }
+        }
+
+
+    }
+}
+
+
+
